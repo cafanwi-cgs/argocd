@@ -6,7 +6,7 @@ metadata:
     workflows.argoproj.io/description: |
       This is a simple example from cgs
 spec:
-  serviceAccountName: cgs
+  serviceAccountName: argowf-artifacts-cgs
   entrypoint: main
   volumes:
   - name: script-volume
