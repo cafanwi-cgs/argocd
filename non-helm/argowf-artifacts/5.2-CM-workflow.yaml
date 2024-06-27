@@ -4,9 +4,9 @@ metadata:
   name: hello
   annotations:
     workflows.argoproj.io/description: |
-      This is a simple example from sosotech
+      This is a simple example from cgs
 spec:
-  serviceAccountName: argo
+  serviceAccountName: cgs
   entrypoint: main
   volumes:
   - name: script-volume
