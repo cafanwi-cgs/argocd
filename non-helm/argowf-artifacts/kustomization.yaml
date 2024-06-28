@@ -2,3 +2,4 @@ resources:
   - 5.1-CM.yaml 
   - 5.2-CM-workflow.yaml
   - serv-acct.yaml
+  - role-n-binding.yaml
