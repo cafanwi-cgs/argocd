@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: eck
+  name: tiledb-test
   namespace: argocd
 spec:
   project: default
@@ -10,7 +10,7 @@ spec:
     targetRevision: HEAD
     path: non-helm/eck
   destination:
-    namespace: eck
+    namespace: cgs
     server: https://kubernetes.default.svc
   syncPolicy:
     automated:
