@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: github-actions-runner
+  namespace: cgs
+  labels:
+    app: github-actions-runner
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: github-actions-runner
+  template:
+    metadata:
+      labels:
+        app: github-actions-runner
+    spec:
+      containers:
+        - name: github-actions-runner
+          image: 126924000548.dkr.ecr.us-east-1.amazonaws.com/xcite-worker:latest
+          env:
+            - name: VERSION
+              value: "2.1.13"
+            - name: GH_OWNER
+              value: "capbancroft"
+            - name: GH_REPOSITORY
+              value: "cgs-xcite-ecr"
