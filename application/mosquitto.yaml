@@ -10,7 +10,7 @@ spec:
     targetRevision: HEAD
     path: non-helm/mosquitto
   destination:
-    namespace: argocgs
+    namespace: cgs
     server: https://kubernetes.default.svc
   syncPolicy:
     automated:
